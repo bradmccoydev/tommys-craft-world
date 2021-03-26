@@ -1,14 +1,13 @@
-import logo from './logo.svg';
+import logo from './../images/logo.svg';
+import { NavMenu } from './NavMenu';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <NavMenu/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Tommys Craft World
-        </p>
+        <img src={logo} alt="logo" />
       </header>
     </div>
   );

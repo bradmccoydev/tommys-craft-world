@@ -1,0 +1,17 @@
+application_name = "tommys-craft-world"
+aws_account_id = "142035491160"
+aws_region = "us-west-2"
+environment = "PROD"
+environment_lower = "prod"
+application_s3_bucket = "tommyscraftworld.bradmccoy.io"
+ui_s3_bucket = "tommyscraftworld.bradmccoy.io"
+root_domain_name = "bradmccoy.io"
+application_subdomain = "tommyscraftworld.bradmccoy.io"
+route53_zone_id = "Z10188742DW2Y8MKNEC3Q"
+ssl_cert = "arn:aws:acm:us-east-1:142035491160:certificate/febbde69-448b-47e6-b9b3-81f520397df3"
+tags = {
+    "provisioner"   = "terraform"
+    "owner"         = "bradmccoy@gmail.com"
+    "application"   = "tommys-craft-world"
+    "environment"   = "PROD"
+}
