@@ -11,13 +11,13 @@ terraform {
   }
 }
 
-resource "aws_dynamodb_table" "terraform_self_service_locks" {
-  name         = "terraform_tommys_craft_world_locks"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "LockID"
-  tags     = var.tags
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-}
+# resource "aws_dynamodb_table" "terraform_self_service_locks" {
+#   name         = "terraform_tommys_craft_world_locks"
+#   billing_mode = "PAY_PER_REQUEST"
+#   hash_key     = "LockID"
+#   tags     = var.tags
+#   attribute {
+#     name = "LockID"
+#     type = "S"
+#   }
+# }

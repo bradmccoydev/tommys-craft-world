@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
@@ -16,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "yarn build && aws s3 sync build/ s3://tommyscraftworld.bradmccoy.io --acl public-read --profile bradmccoy.io && aws cloudfront create-invalidation --distribution-id E3G66NSSZF2CIE --paths /* --profile bradmccoy.io",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
